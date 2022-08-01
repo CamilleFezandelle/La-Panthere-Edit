@@ -684,7 +684,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 15px;
 }
 
 .tight-width-whitespace {
@@ -727,7 +727,7 @@ h2 {
 }
 
 h3 {
-    font-size: 15px;
+    font-size: 17px;
     text-transform: uppercase;
     font-weight: 700;
     color: #333333 !important;
@@ -770,8 +770,9 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(45, 52, 54, 0.7);
     padding: 40px 40px 40px 40px;
+    border-radius: 20px;
 }
 
 .bold-link {
@@ -787,21 +788,28 @@ h4 {
     background-color: #364577;
 }
 
+.bgc-blue {
+    background-color: #74b9ff;
+}
+
 .bgc-atomic-tangerine {
     background-color: #ce4639;
 }
 
 .tc-white {
-    color: #f3976c !important;
+    /* texte */
+    color: #ffffff !important;
+    text-shadow: 0 0 5px #2d3436;
+    font-weight: 700;
 }
 
 .btn-atomic-tangerine {
-    background: #f3976c;
+    background: #ce4639;
     color: #ffffff !important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956 !important;
+    background: #a2362c !important;
     color: #ffffff !important;
 }
 
@@ -821,6 +829,14 @@ h4 {
     color: #c27956 !important;
 }
 
+.text-orange {
+    color: #e4b59f !important;
+}
+
+.text-orange-hover:hover {
+    color: #e0885f !important;
+}
+
 .icon-dark-slate-blue {
     color: #364577 !important;
     border-color: #364577 !important;
@@ -835,11 +851,13 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url('img/agence-la-panthere.jpg');
+    background-image: linear-gradient(rgba(116, 185, 255, 0.6), rgba(116, 185, 255, 0.6)),
+        url('img/agence-la-panthere.jpg');
 }
 
 .bg-presentation {
-    background-image: url('img/image-de-presentation.bmp');
+    background-image: linear-gradient(rgba(116, 185, 255, 0.6), rgba(116, 185, 255, 0.6)),
+        url('img/image-de-presentation.bmp');
 }
 
 .citation {
@@ -878,6 +896,43 @@ li a {
 
 strong {
     font-weight: normal;
+}
+
+.subtitle {
+    font-size: 18px;
+}
+
+.contact-completion {
+    display: flex;
+}
+
+.desc-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.adress-container {
+    max-width: 450px;
+}
+
+.adress-text {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.adress-card {
+    width: 100%;
+}
+
+iframe {
+    width: 100%;
+}
+
+.description {
+    margin-bottom: 0;
+    font-weight: 600;
 }
 
 @media (max-width: 1024px) {
@@ -941,6 +996,13 @@ strong {
         padding: 0 20px;
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
+    }
+    .contact-completion {
+        flex-direction: column;
+        align-items: center;
+    }
+    .desc-container {
+        margin-top: 45px;
     }
 }
 
@@ -1088,6 +1150,16 @@ strong {
     .bloc {
         padding-left: 0;
         padding-right: 0;
+    }
+    iframe {
+        width: 200px;
+        height: 200px;
+    }
+    .adress-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
