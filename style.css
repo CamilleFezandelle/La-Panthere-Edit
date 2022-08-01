@@ -838,6 +838,26 @@ h4 {
     background-image: url('img/image-de-presentation.bmp');
 }
 
+.citation {
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+    line-height: normal;
+    letter-spacing: inherit;
+    max-width: 550px;
+    margin: auto;
+    padding-bottom: 5px;
+}
+
+.citation-title {
+    font-size: 18px;
+    line-height: normal;
+    letter-spacing: inherit;
+    max-width: 550px;
+    margin: auto;
+    color: #535353 !important;
+}
+
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
