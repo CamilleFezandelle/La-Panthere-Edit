@@ -702,7 +702,13 @@ p {
 .social {
     max-width: 400px;
     margin: auto;
-    padding-top: 20px;
+    padding-top: 10px;
+}
+
+.link-social {
+    display: flex;
+    flex-direction: column;
+    color: white !important;
 }
 
 h2 {
